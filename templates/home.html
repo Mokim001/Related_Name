@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Related Names </h1>
+  <p>example using school and students..each student is affliated with a school..we will show all the students of a particular school by using 
+    click on the school list
+    <a href="{% url 'insert_school' %}">Insert School</a>
+    <a href="{% url 'insert_student' %}">Insert Student</a>
+    <a href="{% url 'slist' %}">School List</a>
+  </p>
+{% endblock content %}

@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+{% for school in schools  %}
+<a href="{% url 'display' school.pk %}">{{school.sname}}</a>
+{% endfor %}
+{% endblock content%}
